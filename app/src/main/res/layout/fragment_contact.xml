@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBE8E8">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/medical_background">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                >
+
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:text="Contact Us"
+                    android:shadowColor="#E5E5E5"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:shadowRadius="2"
+                    android:layout_marginTop="30dp"
+                    android:textColor="#003B93"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/linear"
+                    android:layout_marginBottom="20dp"
+                    android:background="#20141414"/>
+
+                <LinearLayout
+            android:id="@+id/linear"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bookvaccineback"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="330dp"
+                        android:layout_height="400dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="8dp">
+                      <TextView
+                          android:layout_marginStart="25dp"
+                          android:layout_width="240dp"
+                          android:layout_height="40dp"
+                          android:textSize="16sp"
+                          android:textColor="#003B93"
+                          android:text="98491 62699"
+                          android:textStyle="bold"/>
+                            <ImageView
+                                android:id="@+id/phone1"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+
+                                android:background="@drawable/ic_baseline_local_phone_24"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="8dp">
+                            <TextView
+
+                                android:text="97005 08408"
+                                android:layout_marginStart="25dp"
+                                android:layout_width="240dp"
+                                android:layout_height="40dp"
+                                android:textSize="16sp"
+                                android:textColor="#003B93"
+                                android:textStyle="bold"/>
+                            <ImageView
+                                android:id="@+id/phone2"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_baseline_local_phone_24"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="8dp">
+                            <TextView
+                                android:layout_marginStart="25dp"
+                                android:layout_width="240dp"
+                                android:layout_height="40dp"
+                                android:textSize="16sp"
+                                android:textColor="#003B93"
+                                android:textStyle="bold"
+                                android:text="089125 03228"/>
+                            <ImageView
+                                android:layout_marginStart="5dp"
+                                android:id="@+id/phone3"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_baseline_local_phone_24"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="8dp">
+                            <TextView
+                                android:layout_marginStart="25dp"
+                                android:layout_width="240dp"
+                                android:layout_height="40dp"
+                                android:textSize="16sp"
+                                android:textColor="#003B93"
+                                android:textStyle="bold"
+                                android:text="lionscancerhospital@gmail.com"/>
+                            <ImageView
+                                android:id="@+id/mail"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_baseline_mail_24"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="8dp">
+                            <TextView
+                                android:layout_marginStart="25dp"
+                                android:layout_width="240dp"
+                                android:layout_height="40dp"
+                                android:textSize="16sp"
+                                android:textColor="#003B93"
+                                android:textStyle="bold"
+                                android:text="https://lionscancerhospital.org"/>
+                            <ImageView
+                                android:id="@+id/web"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_baseline_web_24"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="8dp">
+                            <TextView
+                                android:layout_marginStart="25dp"
+                                android:layout_width="240dp"
+                                android:layout_height="40dp"
+                                android:textSize="16sp"
+                                android:textColor="#003B93"
+                                android:textStyle="bold"
+                                android:text="Share about the Lions Cancer and General Hospital App"/>
+                            <ImageView
+                                android:id="@+id/share"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_baseline_share_24"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="12dp">
+                            <TextView
+                                android:layout_marginStart="25dp"
+                                android:layout_width="240dp"
+                                android:layout_height="40dp"
+                                android:textSize="16sp"
+                                android:textColor="#003B93"
+                                android:textStyle="bold"
+                                android:text="Directions to the Hospital"/>
+                            <ImageView
+                                android:layout_marginStart="5dp"
+                                android:id="@+id/location"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_baseline_location_on_24"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        android:orientation="horizontal">
+
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

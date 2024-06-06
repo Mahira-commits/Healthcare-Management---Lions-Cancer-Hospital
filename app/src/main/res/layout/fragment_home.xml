@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="#FFF8E39F"
+        tools:context="Home.HomeFragment"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:elevation="0dp"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/teal_200"
+            app:layout_scrollFlags="scroll"
+            android:id="@+id/collapsing_toolbar"
+            android:background="@drawable/gradientlist1">
+
+
+            <ImageView
+                android:layout_width="247dp"
+                android:layout_height="360dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/lions_building_new_removebg"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="parallax" />
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_card"
+        android:elevation="30dp"
+        app:layout_anchor="@+id/scroll"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <in.codeshuffle.typewriterview.TypeWriterView
+                android:id="@+id/p_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="25dp"
+                android:shadowColor="#B5F8C85F"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="2"
+                android:text="Harshini!"
+                android:textAllCaps="false"
+
+
+                android:textColor="#022896"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/what"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/what"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:shadowColor="#F7D795"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2"
+                android:text="What are you looking for?"
+                android:textColor="#003B93"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/buttoncontainer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.01"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/p_name"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/buttoncontainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@id/highlights"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.55"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/what"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:id="@+id/b1"
+                    android:layout_width="110dp"
+                    android:layout_height="127dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/doctors"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@id/highlights">
+
+
+                    <ImageView
+
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="48dp"
+                        android:layout_marginTop="16dp"
+                        app:srcCompat="@drawable/ic_stethoscope_svgrepo_com_2"
+                        app:tint="#053D8E" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/b2"
+                    android:layout_width="110dp"
+                    android:layout_height="127dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/export"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@id/highlights"
+                    app:layout_constraintEnd_toStartOf="@id/b2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/what">
+
+                    <ImageView
+
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="46dp"
+                        android:layout_marginTop="18dp"
+                        app:srcCompat="@drawable/ic_appointment_book_svgrepo_com"
+                        app:tint="#053D8E" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/b3"
+                    android:layout_width="110dp"
+                    android:layout_height="127dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/facilitie"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@id/highlights"
+                    app:layout_constraintEnd_toStartOf="@id/b2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/what">
+
+                    <ImageView
+
+                        android:layout_width="38dp"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="46dp"
+                        android:layout_marginTop="18dp"
+                        app:srcCompat="@drawable/ic_hospital_svgrepo_com_2"
+                        app:tint="#053D8E" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="23dp"
+
+                android:layout_marginEnd="23dp"
+                android:layout_marginBottom="10dp"
+                android:background="#4705239C"
+                app:layout_constraintBottom_toTopOf="@id/highlights"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/buttoncontainer" />
+
+
+            <TextView
+                android:id='@+id/highlights'
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:shadowColor="#A5F8C85F"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="2"
+                android:text="Highlights"
+                android:textAllCaps="false"
+                android:textColor="#022896"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/buttoncontainer" />
+
+            <!--                <com.denzcoskun.imageslider.ImageSlider-->
+            <!--                android:id='@+id/imageSlider'-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="225dp"-->
+            <!--                android:layout_margin="27dp"-->
+            <!--                app:iss_auto_cycle="true"-->
+            <!--                app:iss_corner_radius="10"-->
+            <!--                app:iss_delay="30"-->
+            <!--                app:iss_error_image="@android:color/darker_gray"-->
+            <!--                app:iss_period="3000"-->
+            <!--                app:iss_placeholder="@android:color/darker_gray"-->
+            <!--                app:iss_selected_dot="@drawable/default_selected_dot"-->
+            <!--                app:iss_unselected_dot="@drawable/default_unselected_dot"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintHorizontal_bias="0.51"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/highlights" />-->
+<!--            <androidx.viewpager2.widget.ViewPager2-->
+<!--                android:id="@+id/imageSlider"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="225dp"-->
+<!--                android:layout_marginStart="23dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginEnd="23dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:paddingStart="80dp"-->
+<!--                android:paddingEnd="80dp"-->
+<!--                app:layout_constraintBottom_toTopOf="@id/stats"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/highlights" />-->
+            <RelativeLayout
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
+
+                android:background="#27FFD26B"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/highlights">
+
+                <LinearLayout
+                    android:id="@+id/todaysupdates"
+                    android:layout_width="105dp"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#B1F9D47F"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:shadowColor="#ffffff"
+                        android:shadowDx="4"
+                        android:shadowDy="4"
+                        android:shadowRadius="2"
+                        android:text="Todays Updates"
+
+                        android:textAllCaps="false"
+                        android:textColor="#022896"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginStart="2.5dp"
+                        android:layout_marginEnd="2.5dp"
+                        android:background="#0130B7" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:layout_marginStart="2.5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="2.5dp"
+                        android:background="#0130B7" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:shadowColor="#ffffff"
+                        android:shadowDx="4"
+                        android:shadowDy="4"
+                        android:shadowRadius="2"
+                        android:text="Appointments, vitals and more..."
+
+                        android:textAllCaps="false"
+                        android:textColor="#022896"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/ic_baseline_arrow_circle_right_24"
+                        android:backgroundTint="#022896" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="16.5dp"
+                    android:layout_toEndOf="@id/todaysupdates">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/recentapt"
+                            android:layout_width="180dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/homerecyclerviewbackground"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="11dp"
+                                android:shadowColor="#000C2F"
+                                android:shadowDx="4"
+                                android:shadowDy="4"
+                                android:shadowRadius="2"
+                                android:text="Appointment Updates"
+                                android:textAllCaps="false"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1.5dp"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginTop="3.5dp"
+                                android:layout_marginEnd="7dp"
+                                android:background="#FFFFFF" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginStart="12dp"
+                                    android:shadowColor="#000C2F"
+                                    android:shadowDx="4"
+                                    android:shadowDy="4"
+                                    android:shadowRadius="2"
+                                    android:text="Doctor Name:"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/doc_n"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:shadowColor="#000C2F"
+                                    android:shadowDx="4"
+                                    android:shadowDy="4"
+                                    android:shadowRadius="2"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:shadowColor="#000C2F"
+                                    android:shadowDx="4"
+                                    android:shadowDy="4"
+                                    android:shadowRadius="2"
+                                    android:text="Date:"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/apt_det_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:shadowColor="#000C2F"
+                                    android:shadowDx="4"
+                                    android:shadowDy="4"
+                                    android:shadowRadius="2"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:shadowColor="#000C2F"
+                                    android:shadowDx="4"
+                                    android:shadowDy="4"
+                                    android:shadowRadius="2"
+                                    android:text="Time:"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/apt_det_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:shadowColor="#000C2F"
+                                    android:shadowDx="4"
+                                    android:shadowDy="4"
+                                    android:shadowRadius="2"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/vitals"
+                            android:layout_width="180dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/homerecyclerviewbackground"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="11dp"
+                                android:shadowColor="#000C2F"
+                                android:shadowDx="4"
+                                android:shadowDy="4"
+                                android:shadowRadius="2"
+                                android:text="Patient Vitals"
+                                android:textAllCaps="false"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1.5dp"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginTop="25dp"
+                                android:layout_marginEnd="7dp"
+                                android:background="#FFFFFF" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="17dp"
+                                    android:layout_height="17dp"
+                                    android:layout_marginStart="12dp"
+                                    android:background="@drawable/weight_svgrepo_com_2"
+                                    android:backgroundTint="@color/white" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginStart="12dp"
+                                    android:shadowColor="#000C2F"
+                                    android:shadowDx="4"
+                                    android:shadowDy="4"
+                                    android:shadowRadius="2"
+                                    android:text="Weight:"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/pheight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:shadowColor="#000C2F"
+                                    android:shadowDx="4"
+                                    android:shadowDy="4"
+                                    android:shadowRadius="2"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="17dp"
+                                    android:layout_height="17dp"
+                                    android:layout_marginStart="13dp"
+                                    android:background="@drawable/body_height_svgrepo_com"
+                                    android:backgroundTint="@color/white" />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:shadowColor="#000C2F"
+                                    android:shadowDx="4"
+                                    android:shadowDy="4"
+                                    android:shadowRadius="2"
+                                    android:text="Height:"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/Pweight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:shadowColor="#000C2F"
+                                    android:shadowDx="4"
+                                    android:shadowDy="4"
+                                    android:shadowRadius="2"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

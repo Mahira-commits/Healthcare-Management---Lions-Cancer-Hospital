@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.denzcoskun:ImageSlideshow:0.1.0@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8ddcfc592b3a30cc58ef1ff1ab0c958e/transformed/jetified-ImageSlideshow-0.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8ddcfc592b3a30cc58ef1ff1ab0c958e/transformed/jetified-ImageSlideshow-0.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8ddcfc592b3a30cc58ef1ff1ab0c958e/transformed/jetified-ImageSlideshow-0.1.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

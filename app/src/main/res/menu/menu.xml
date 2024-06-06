@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_facilities"
+            android:icon="@drawable/ic_hospital_svgrepo_com"
+            android:title="@string/menu_facilities" />
+        <item
+            android:id="@+id/nav_Doctors"
+            android:icon="@drawable/ic_stethoscope_svgrepo_com_2"
+            android:title="@string/menu_doctors" />
+        <item
+            android:id="@+id/nav_appointments"
+            android:icon="@drawable/ic_appointment_book_svgrepo_com"
+            android:title="@string/menu_Book_Appointment" />
+        <item
+            android:id="@+id/nav_vaccines"
+            android:icon="@drawable/ic_syringe_svgrepo_com"
+            android:title="@string/menu_Book_Vaccine" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about_us_svgrepo_com"
+            android:title="@string/menu_about" />
+        <item
+            android:id="@+id/nav_Contact"
+            android:icon="@drawable/ic_contacts_book_svgrepo_com"
+            android:title="@string/menu_contact" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout_svgrepo_com"
+            android:title="@string/menu_logout" />
+
+    </group>
+</menu>

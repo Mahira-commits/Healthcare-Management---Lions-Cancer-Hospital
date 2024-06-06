@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: in.codeshuffle:typewriterview:1.1.0@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9de3f6c81c04edde2def883935a123f8/transformed/jetified-typewriterview-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9de3f6c81c04edde2def883935a123f8/transformed/jetified-typewriterview-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9de3f6c81c04edde2def883935a123f8/transformed/jetified-typewriterview-1.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

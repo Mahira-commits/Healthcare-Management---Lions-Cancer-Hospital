@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".about.AboutFragment"
+    android:background="@drawable/doc_backgrounf">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/about_btn"
+        android:layout_width="match_parent"
+        android:layout_marginTop="48dp"
+        android:layout_height="120dp"
+        android:background="#003B93"
+        android:text="@string/about_us"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/team_btn"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="35dp"
+        android:layout_height="120dp"
+        android:background="#003B93"
+        android:text="@string/our_team"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/mission_btn"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="35dp"
+        android:layout_height="120dp"
+        android:text="Our Mission and Vision"
+        android:textStyle="bold"
+
+        android:background="#003B93"
+        android:textSize="22sp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

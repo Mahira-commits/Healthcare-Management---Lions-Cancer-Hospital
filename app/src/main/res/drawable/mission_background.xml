@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/black">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/black" />
+
+        </shape>
+    </item>
+
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <gradient
+                android:endColor = "#FEFFFF"
+                android:centerColor = "#E9F6FB"
+                android:startColor = "#C5EBFB"
+                android:angle = "90"
+                android:type = "linear" />
+            <corners android:radius="20dp"/>
+
+        </shape>
+    </item>
+</ripple>
